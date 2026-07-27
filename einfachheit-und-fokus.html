@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einfachheit &amp; Fokus – monkkee</title>
+  <meta name="description" content="Editor, Tagging, Suche und Design bei monkkee: Wesentliche Funktionen, einfache Bedienung, ausgewogenes Farb- und Formkonzept.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ── Header ── -->
+  <header class="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Hauptnavigation">
+      <a href="index.html" class="site-logo">monk<span>kee</span></a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Navigation öffnen">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-list" id="main-nav" role="list">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber-monkkee.html">Über monkkee</a></li>
+        <li><a href="sicherheit.html">Sicherheit</a></li>
+        <li><a href="privatsphaere.html">Privatsphäre</a></li>
+        <li><a href="einfachheit-und-fokus.html" aria-current="page">Einfachheit &amp; Fokus</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Banner ── -->
+  <div class="page-banner">
+    <h1>Einfachheit &amp; Fokus</h1>
+    <p class="lead">Das Wesentliche – klar, übersichtlich und ohne Ablenkung.</p>
+  </div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Startseite</a>
+          <span class="sep" aria-hidden="true"></span>
+          <span aria-current="page">Einfachheit &amp; Fokus</span>
+        </nav>
+
+        <div class="content-body">
+
+          <h2>Konzentration auf das Wesentliche</h2>
+          <p>
+            monkkee folgt einem klaren Prinzip: <strong>Wesentliche Funktionen sind
+            möglich – solange das Grundprinzip der einfachen Bedienung nicht verletzt wird.</strong>
+            Das bedeutet nicht, dass monkkee wenig kann. Es bedeutet, dass jede Funktion
+            einen klaren Zweck hat und das Schreiben nicht in den Hintergrund drängt.
+          </p>
+          <p>
+            Ein typisches Beispiel für eine bewusste Nicht-Funktion sind Tabellen:
+            Sie sind in monkkee nicht umsetzbar, weil ihre Komplexität dem Ziel –
+            dem fokussierten Schreiben – entgegensteht.
+          </p>
+
+          <div class="highlight-box">
+            <p>
+              <strong>Autospeicherung immer aktiv.</strong> Du musst dir keine Gedanken
+              darüber machen, ob du deinen Eintrag gespeichert hast. monkkee speichert
+              automatisch und kontinuierlich – kein Datenverlust, kein manuelles Speichern.
+            </p>
+          </div>
+
+          <h2>WYSIWYG-Editor</h2>
+          <p>
+            monkkee bietet einen <strong>umfangreichen WYSIWYG-Editor</strong>
+            (What You See Is What You Get). Du siehst beim Schreiben direkt,
+            wie der Text formatiert aussieht – ohne technische Syntax.
+            Fettdruck, Kursivschrift, Listen, Links und Bildeinbettung
+            sind direkt im Editor verfügbar.
+          </p>
+          <p>
+            Die verfügbaren Editorwerkzeuge lassen sich in den
+            <strong>Einstellungen anpassen</strong>: Wähle selbst, welche
+            Werkzeuge dir standardmäßig angezeigt werden, und konfiguriere
+            deinen persönlichen Schreibarbeitsplatz.
+          </p>
+
+          <h2 id="tagging">Tagging-Konzept</h2>
+          <p>
+            Einträge können mit <strong>Tags</strong> versehen werden –
+            frei wählbaren Schlüsselwörtern, die eine schnelle Kategorisierung
+            und Wiederauffindbarkeit ermöglichen. Das Tagging-System ist flexibel:
+            Du kannst Tags nach Themen, Projekten, Stimmungen oder beliebigen anderen
+            Kriterien vergeben.
+          </p>
+          <p>
+            Tag-Namen werden ebenso wie Eintragstext vollständig verschlüsselt –
+            selbst die Struktur deiner Kategorisierung ist damit privat.
+            Mehr dazu auf der Seite <a href="sicherheit.html">Sicherheit</a>.
+          </p>
+
+          <h2 id="suche">Suche und Navigation</h2>
+          <p>
+            monkkee bietet drei Wege, Einträge zu finden:
+          </p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="icon" aria-hidden="true">🔍</span>
+              <span>
+                <strong>Volltextsuche:</strong> Suche nach beliebigen Begriffen
+                innerhalb deiner Einträge. Die Suche findet lokal statt –
+                Suchbegriffe werden nicht an den Server übertragen.
+              </span>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">🏷️</span>
+              <span>
+                <strong>Tag-Suche:</strong> Filtere Einträge nach einem oder
+                mehreren Tags und behalte den Überblick über deine Kategorien.
+              </span>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">📅</span>
+              <span>
+                <strong>Datumssuche:</strong> Navigiere durch Einträge anhand
+                ihres Datums. Das Datum eines Eintrags kann auch nachträglich
+                geändert werden.
+              </span>
+            </li>
+          </ul>
+
+          <h2>Design und Anpassung</h2>
+          <p>
+            monkkee hat ein <strong>einfaches Layout mit einem ausgewogenen
+            Farb- und Formkonzept</strong>. Das visuelle Erscheinungsbild ist
+            ruhig und zurückhaltend – es unterstützt das Schreiben, ohne davon abzulenken.
+          </p>
+          <p>
+            In den Einstellungen stehen Anpassungsmöglichkeiten bereit – zum Beispiel
+            die Konfiguration der Standard-Editorwerkzeuge. monkkee bietet dir so
+            ein Minimum an Personalisierung, ohne die Oberfläche zu überladen.
+          </p>
+
+          <h2>Webanwendung ohne App-Hürden</h2>
+          <p>
+            monkkee läuft als <a href="ueber-monkkee.html">Webanwendung</a> vollständig
+            im Browser. Kein App-Store, keine Installation, kein Update-Zwang.
+            Du nutzt monkkee genau dann, wenn du schreiben möchtest – unkompliziert und direkt.
+          </p>
+
+          <!-- Teaser zu anderen Seiten -->
+          <h2>Mehr erfahren</h2>
+          <div class="teaser-grid">
+            <a href="ueber-monkkee.html" class="teaser-card">
+              <span class="teaser-icon" aria-hidden="true">📖</span>
+              <h3>Über monkkee</h3>
+              <p>Philosophie, Nutzungsmodell und Hintergründe der Anwendung.</p>
+              <span class="teaser-link">Zu Über monkkee</span>
+            </a>
+            <a href="privatsphaere.html" class="teaser-card">
+              <span class="teaser-icon" aria-hidden="true">🛡️</span>
+              <h3>Privatsphäre</h3>
+              <p>Warum monkkee keine Teilen-Funktionen hat – und warum das gut so ist.</p>
+              <span class="teaser-link">Zur Datenschutzseite</span>
+            </a>
+          </div>
+
+          <!-- Seiten-Navigation -->
+          <nav class="page-nav" aria-label="Weitere Seiten">
+            <div class="page-nav-section prev">
+              <h4>Vorherige Seite</h4>
+              <a href="privatsphaere.html">Privatsphäre</a>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      &copy; 2024 <a href="https://www.monkkee.com" target="_blank" rel="noopener noreferrer">monkkee.com</a>
+      &nbsp;·&nbsp; Interne Übersichtsseite &nbsp;·&nbsp;
+      <a href="https://monkkee.hesk.com" target="_blank" rel="noopener noreferrer">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('main-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(open));
+        btn.setAttribute('aria-label', open ? 'Navigation schließen' : 'Navigation öffnen');
+      });
+    }());
+  </script>
+
+</body>
+</html>
