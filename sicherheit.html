@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sicherheit – monkkee</title>
+  <meta name="description" content="Wie monkkee deine Tagebucheinträge durch clientseitige Verschlüsselung schützt – einmalig unter Webanwendungen.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- ── Header ── -->
+  <header class="site-header" role="banner">
+    <nav class="nav-inner" aria-label="Hauptnavigation">
+      <a href="index.html" class="site-logo">monk<span>kee</span></a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Navigation öffnen">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <ul class="nav-list" id="main-nav" role="list">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber-monkkee.html">Über monkkee</a></li>
+        <li><a href="sicherheit.html" aria-current="page">Sicherheit</a></li>
+        <li><a href="privatsphaere.html">Privatsphäre</a></li>
+        <li><a href="einfachheit-und-fokus.html">Einfachheit &amp; Fokus</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Banner ── -->
+  <div class="page-banner">
+    <h1>Sicherheit</h1>
+    <p class="lead">Deine Daten gehören nur dir – geschützt durch clientseitige Verschlüsselung.</p>
+  </div>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Startseite</a>
+          <span class="sep" aria-hidden="true"></span>
+          <span aria-current="page">Sicherheit</span>
+        </nav>
+
+        <div class="content-body">
+
+          <h2>Clientseitige Verschlüsselung</h2>
+          <p>
+            Das Herzstück der monkkee-Sicherheit ist die <strong>clientseitige Verschlüsselung</strong>:
+            Alle Daten werden direkt in deinem Browser verschlüsselt, bevor sie dein Gerät verlassen.
+            Der Server von monkkee empfängt ausschließlich verschlüsselte Daten – er hat zu keinem
+            Zeitpunkt Zugriff auf deine Inhalte im Klartext.
+          </p>
+
+          <div class="highlight-box">
+            <p>
+              <strong>Einmalig unter Webanwendungen:</strong> Mit diesem Verschlüsselungskonzept
+              setzt monkkee einen Standard, der unter webbasierten Tagebuchanwendungen
+              einzigartig ist. Deine Daten im Klartext existieren ausschließlich auf
+              deinem eigenen Gerät.
+            </p>
+          </div>
+
+          <h2>Was wird verschlüsselt?</h2>
+          <p>
+            monkkee verschlüsselt konsequent – nicht nur den Eintragstext, sondern alle
+            inhaltsbezogenen Daten:
+          </p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="icon" aria-hidden="true">📝</span>
+              <span><strong>Einträge:</strong> Der vollständige Text jedes Tagebucheintrags wird verschlüsselt gespeichert.</span>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">🖼️</span>
+              <span><strong>Bilddaten:</strong> Auch in Einträge eingefügte Bilder werden vollständig verschlüsselt.</span>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">🏷️</span>
+              <span><strong>Tag-Namen:</strong> Selbst die Namen deiner Tags verlassen dein Gerät nur verschlüsselt.</span>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">🔍</span>
+              <span><strong>Suchbegriffe:</strong> Textsuchbegriffe verlassen den Client nicht im Klartext – die Suche findet lokal statt.</span>
+            </li>
+          </ul>
+
+          <h2>Daten auf dem Weg zum Server</h2>
+          <p>
+            Wenn dein Browser Daten an den monkkee-Server sendet – etwa beim Speichern eines
+            Eintrags – geschieht das ausschließlich in verschlüsselter Form. Die Übertragung
+            erfolgt zusätzlich über eine gesicherte HTTPS-Verbindung.
+          </p>
+          <p>
+            Selbst wenn jemand den Datenverkehr zwischen deinem Browser und dem Server abfangen
+            würde, wären die übertragenen Daten nicht lesbar.
+          </p>
+
+          <h2>Suche ohne Datenweitergabe</h2>
+          <p>
+            Eine besondere Eigenschaft von monkkee ist die <strong>lokale Volltextsuche</strong>:
+            Wenn du nach einem Begriff suchst, wird dieser Suchbegriff nicht an den Server
+            übermittelt. Die Suche wird ausschließlich im Browser durchgeführt – auf den
+            bereits entschlüsselten Daten in deiner aktuellen Sitzung.
+          </p>
+          <p>
+            Dein Suchverhalten ist damit vollständig privat – mehr dazu auf der Seite
+            <a href="privatsphaere.html">Privatsphäre</a>.
+          </p>
+
+          <h2>Infrastruktur und Verfügbarkeit</h2>
+          <p>
+            monkkee betreibt eine <strong>leistungsfähige Performance-Infrastruktur</strong>
+            für zuverlässigen Betrieb. Dein Tagebuch soll jederzeit erreichbar sein –
+            unabhängig davon, wann und von wo du schreibst.
+          </p>
+          <p>
+            Die Kombination aus Verfügbarkeit und Datenschutz ist dabei kein Widerspruch,
+            sondern ein grundlegendes Designziel von monkkee.
+          </p>
+
+          <!-- Teaser zu anderen Seiten -->
+          <h2>Mehr erfahren</h2>
+          <div class="teaser-grid">
+            <a href="privatsphaere.html" class="teaser-card">
+              <span class="teaser-icon" aria-hidden="true">🛡️</span>
+              <h3>Privatsphäre</h3>
+              <p>Wie das Datenschutzkonzept von monkkee die persönliche Nutzung in den Mittelpunkt stellt.</p>
+              <span class="teaser-link">Zur Datenschutzseite</span>
+            </a>
+            <a href="ueber-monkkee.html" class="teaser-card">
+              <span class="teaser-icon" aria-hidden="true">📖</span>
+              <h3>Über monkkee</h3>
+              <p>Hintergründe, Philosophie und das Nutzungsmodell der Anwendung.</p>
+              <span class="teaser-link">Zu Über monkkee</span>
+            </a>
+          </div>
+
+          <!-- Seiten-Navigation -->
+          <nav class="page-nav" aria-label="Weitere Seiten">
+            <div class="page-nav-section prev">
+              <h4>Vorherige Seite</h4>
+              <a href="ueber-monkkee.html">Über monkkee</a>
+            </div>
+            <div class="page-nav-section next">
+              <h4>Nächste Seite</h4>
+              <a href="privatsphaere.html">Privatsphäre</a>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      &copy; 2024 <a href="https://www.monkkee.com" target="_blank" rel="noopener noreferrer">monkkee.com</a>
+      &nbsp;·&nbsp; Interne Übersichtsseite &nbsp;·&nbsp;
+      <a href="https://monkkee.hesk.com" target="_blank" rel="noopener noreferrer">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('main-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', String(open));
+        btn.setAttribute('aria-label', open ? 'Navigation schließen' : 'Navigation öffnen');
+      });
+    }());
+  </script>
+
+</body>
+</html>
