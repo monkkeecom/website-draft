@@ -30,6 +30,7 @@
         <li><a href="sicherheit.html" aria-current="page">Sicherheit</a></li>
         <li><a href="privatsphaere.html">Privatsphäre</a></li>
         <li><a href="einfachheit-und-fokus.html">Einfachheit &amp; Fokus</a></li>
+        <li><a href="preise.html">Preise</a></li>
       </ul>
     </nav>
   </header>
@@ -70,6 +71,46 @@
             </p>
           </div>
 
+          <h2>AES-256 – militärische Verschlüsselung für dein Tagebuch</h2>
+          <p>
+            Als Verschlüsselungsmethode verwendet monkkee <strong>AES-256</strong> (Advanced Encryption Standard
+            mit 256-Bit-Schlüssellänge). Diese Technologie wurde ursprünglich für militärische Zwecke
+            entwickelt und wird heute weltweit von Regierungen, Organisationen und Banken zur
+            Verschlüsselung streng geheimer Informationen eingesetzt.
+          </p>
+          <p>
+            Der Schlüssel für die Verschlüsselung ist <strong>dein eigenes Passwort</strong>, das du bei
+            jedem Login eingibst. Nur wer das Passwort kennt, kann die Einträge entschlüsseln –
+            nicht einmal die Systemadministratoren von monkkee.
+          </p>
+
+          <h2>Sichere Übertragung per SSL/HTTPS</h2>
+          <p>
+            Die Übertragung der bereits verschlüsselten Daten zwischen deinem Gerät und dem
+            monkkee-Server erfolgt zusätzlich über eine <strong>SSL/HTTPS-Verbindung</strong>.
+            Dadurch kann die Verbindung nicht abgehört werden – selbst wenn jemand den Datenstrom
+            abfangen würde, wären die Inhalte doppelt geschützt: erst durch AES-256,
+            dann durch die verschlüsselte Verbindung.
+          </p>
+
+          <h2>Kein Passwort-Reset – aus gutem Grund</h2>
+          <p>
+            Da dein Passwort zugleich der <strong>Verschlüsselungsschlüssel</strong> ist,
+            gibt es bei monkkee bewusst <strong>keine Funktion zur Passwort-Wiederherstellung</strong>.
+            Kein Mitarbeiter und keine Software auf Serverseite kann dein Passwort zurücksetzen –
+            das wäre technisch gleichbedeutend damit, deine verschlüsselten Daten zugänglich zu machen.
+          </p>
+          <p>
+            Eine Herausgabe von Daten an Regierungsbehörden ist daher faktisch nicht möglich:
+            monkkee hat schlicht keinen Zugriff auf deine Inhalte.
+          </p>
+          <p>
+            Als Absicherung für dich gibt es die <strong>Passwort-Hinweis-Funktion</strong>:
+            Du kannst beim Anlegen oder Ändern deines Passworts einen persönlichen Hinweis hinterlegen,
+            der dir im Notfall per E-Mail zugeschickt wird. Der Hinweis ist kein Passwort-Ersatz,
+            aber eine eigene Gedankenstütze für den Notfall.
+          </p>
+
           <h2>Was wird verschlüsselt?</h2>
           <p>
             monkkee verschlüsselt konsequent – nicht nur den Eintragstext, sondern alle
@@ -95,17 +136,6 @@
             </li>
           </ul>
 
-          <h2>Daten auf dem Weg zum Server</h2>
-          <p>
-            Wenn dein Browser Daten an den monkkee-Server sendet – etwa beim Speichern eines
-            Eintrags – geschieht das ausschließlich in verschlüsselter Form. Die Übertragung
-            erfolgt zusätzlich über eine gesicherte HTTPS-Verbindung.
-          </p>
-          <p>
-            Selbst wenn jemand den Datenverkehr zwischen deinem Browser und dem Server abfangen
-            würde, wären die übertragenen Daten nicht lesbar.
-          </p>
-
           <h2>Suche ohne Datenweitergabe</h2>
           <p>
             Eine besondere Eigenschaft von monkkee ist die <strong>lokale Volltextsuche</strong>:
@@ -120,9 +150,15 @@
 
           <h2>Infrastruktur und Verfügbarkeit</h2>
           <p>
-            monkkee betreibt eine <strong>leistungsfähige Performance-Infrastruktur</strong>
-            für zuverlässigen Betrieb. Dein Tagebuch soll jederzeit erreichbar sein –
-            unabhängig davon, wann und von wo du schreibst.
+            monkkee betreibt eine <strong>leistungsfähige Infrastruktur</strong> in Deutschland.
+            Der Server-Standort Deutschland bietet zusätzliche Rechtssicherheit im Sinne des
+            europäischen Datenschutzrechts.
+          </p>
+          <p>
+            Die Datenbankinfrastruktur läuft im <strong>Multi-AZ-Betrieb</strong> (Multi-Availability-Zone):
+            Die Datenbank wird gleichzeitig in mehreren geografisch getrennten Verfügbarkeitszonen
+            betrieben. Fällt eine Zone aus, übernimmt automatisch eine andere – dein Tagebuch
+            bleibt erreichbar.
           </p>
           <p>
             Die Kombination aus Verfügbarkeit und Datenschutz ist dabei kein Widerspruch,
