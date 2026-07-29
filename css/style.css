@@ -14,8 +14,8 @@
   --color-bg:        #f0f4fb;
   --color-surface:   #ffffff;
   --color-primary:   #1e3a5f;
-  --color-accent:    #2563eb;
-  --color-accent-lt: #dbeafe;
+  --color-accent:    #ff8200;
+  --color-accent-lt: #fff3e0;
   --color-text:      #0f172a;
   --color-muted:     #64748b;
   --color-border:    #cbd5e8;
@@ -161,7 +161,7 @@ body {
   letter-spacing: -.01em;
 }
 .hero h1 em {
-  color: #93c5fd;
+  color: #ffb84d;
   font-style: normal;
 }
 .hero p {
@@ -184,7 +184,7 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,.2);
 }
 .btn-primary:hover {
-  background: #1d4ed8;
+  background: #e67300;
   transform: translateY(-2px);
 }
 
@@ -311,7 +311,7 @@ a {
   text-underline-offset: 3px;
   transition: color var(--transition);
 }
-a:hover { color: #1d4ed8; }
+a:hover { color: #e67300; }
 
 /* ── Inhalts-Typo ── */
 .content-body {
@@ -415,7 +415,7 @@ a:hover { color: #1d4ed8; }
   opacity: .9;
 }
 .site-footer a {
-  color: #93c5fd;
+  color: #ffb84d;
   text-underline-offset: 3px;
 }
 
